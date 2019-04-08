@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fancaofaker.studentmanagerment_sever">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconmainwait"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Waiting_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Login_Activity" />
+        <activity android:name=".Activity.MainApp_Activity" />
+        <activity android:name=".Activity.Sinhvien_activity" />
+        <activity android:name=".Activity.Monhoc_Activity" />
+        <activity android:name=".Activity.Diem_Activity" />
+        <activity android:name=".Activity.Lichhoc_Activity" />
+        <activity android:name=".Activity.ThemSV04_Activity" />
+        <activity android:name=".Activity.Chinhsua_sv04_Activity" />
+        <activity android:name=".Activity.Them_sv05_Activity" />
+        <activity android:name=".Activity.Chinhsua_sv05_Activity"></activity>
+    </application>
+
+</manifest>

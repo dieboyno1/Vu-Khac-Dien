@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fancaofaker.studentmanagerment_sever.Activity.Diem_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ong vàng Poly"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="#ff0000"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên"
+                android:textColor="#0004ff"
+                android:id="@+id/tenongvangpolytxt"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/masvongvang"
+                android:textSize="13dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:text="Mã SV"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dtbongvang"
+                android:textSize="20dp"
+                android:textColor="#ff0000"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="Điểm"/>
+
+        </LinearLayout>
+
+        // list xuatsac
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinh viên xuất sắc"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listview_sv_xuatsac">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+
+        // list gioi
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinh viên giỏi"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"/>
+
+            <ListView
+                android:id="@+id/listview_sv_gioi"
+                android:layout_width="match_parent"
+                android:layout_height="421dp">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/_back"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</LinearLayout>

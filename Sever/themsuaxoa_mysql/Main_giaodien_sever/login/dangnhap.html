@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body style="background: #99CCCC;">
+<center><h1 style="margin-top: 100px; color: #000000;">Xin mời đăng nhập để sử dụng trình quản lí</h1></center>
+
+    <div class="container">
+
+  <div id="login-form">
+
+    <h3>Login</h3>
+
+    <fieldset>
+
+      <form action="javascript:void(0);" method="get">
+
+        <input type="email" required value="User" id="email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
+
+        <input type="password" required value="Password" id="pass" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
+
+        <input type="submit" value="Login" onclick="checkidpass()">
+
+        <footer class="clearfix">
+
+          <p><span class="info">?</span><a href="#">Forgot Password</a></p>
+
+        </footer>
+
+      </form>
+
+    </fieldset>
+
+  </div> <!-- end login-form -->
+
+</div>
+    
+    
+    
+    
+    
+  </body>
+  <script type="text/javascript">
+  	function checkidpass() {
+    var getmailchek = document.getElementById("email").value;
+     var getpasschek = document.getElementById("pass").value;
+
+    
+
+
+
+     if(getmailchek == "tienhuynh@admin.com" && getpasschek =="12345")
+     {
+      
+      window.open("http://192.168.1.11/Android_Sever_MOB401/Demo_Example_/themsuaxoa_mysql/Main_giaodien_sever/GiaoDien/dashboard.html");
+        window.close();
+     }
+     else
+     {
+     	alert("Email hoặc Password không tồn tại , vui lòng kiểm tra lại !");
+
+     }
+
+
+}
+  </script>
+</html>
